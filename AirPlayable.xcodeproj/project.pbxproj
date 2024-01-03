@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82A1FF12B4621C3002AC44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A1FF02B4621C3002AC44D /* AppDelegate.swift */; };
+		F82A1FF52B4621C3002AC44D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F82A1FF32B4621C3002AC44D /* Main.html */; };
+		F82A1FF72B4621C3002AC44D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F82A1FF62B4621C3002AC44D /* Icon.png */; };
+		F82A1FF92B4621C3002AC44D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F82A1FF82B4621C3002AC44D /* Style.css */; };
+		F82A1FFB2B4621C3002AC44D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F82A1FFA2B4621C3002AC44D /* Script.js */; };
+		F82A1FFD2B4621C3002AC44D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A1FFC2B4621C3002AC44D /* ViewController.swift */; };
+		F82A20002B4621C3002AC44D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82A1FFE2B4621C3002AC44D /* Main.storyboard */; };
+		F82A20022B4621C4002AC44D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82A20012B4621C4002AC44D /* Assets.xcassets */; };
+		F82A200A2B4621C4002AC44D /* AirPlayable Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F82A20092B4621C4002AC44D /* AirPlayable Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F82A200F2B4621C4002AC44D /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A200E2B4621C4002AC44D /* SafariExtensionHandler.swift */; };
+		F82A20142B4621C4002AC44D /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = F82A20132B4621C4002AC44D /* script.js */; };
+		F82A20162B4621C4002AC44D /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F82A20152B4621C4002AC44D /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F82A200B2B4621C4002AC44D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F82A1FE52B4621C3002AC44D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82A20082B4621C4002AC44D;
+			remoteInfo = "AirPlayable Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F82A20212B4621C4002AC44D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F82A200A2B4621C4002AC44D /* AirPlayable Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F82A1FED2B4621C3002AC44D /* AirPlayable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirPlayable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82A1FF02B4621C3002AC44D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F82A1FF42B4621C3002AC44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		F82A1FF62B4621C3002AC44D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F82A1FF82B4621C3002AC44D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		F82A1FFA2B4621C3002AC44D /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		F82A1FFC2B4621C3002AC44D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F82A1FFF2B4621C3002AC44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F82A20012B4621C4002AC44D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82A20032B4621C4002AC44D /* AirPlayable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirPlayable.entitlements; sourceTree = "<group>"; };
+		F82A20042B4621C4002AC44D /* AirPlayable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirPlayable.entitlements; sourceTree = "<group>"; };
+		F82A20092B4621C4002AC44D /* AirPlayable Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AirPlayable Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82A200E2B4621C4002AC44D /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		F82A20132B4621C4002AC44D /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		F82A20152B4621C4002AC44D /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		F82A201A2B4621C4002AC44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82A201B2B4621C4002AC44D /* AirPlayable_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AirPlayable_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82A1FEA2B4621C3002AC44D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A20062B4621C4002AC44D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F82A1FE42B4621C3002AC44D = {
+			isa = PBXGroup;
+			children = (
+				F82A1FEF2B4621C3002AC44D /* AirPlayable */,
+				F82A200D2B4621C4002AC44D /* AirPlayable Extension */,
+				F82A1FEE2B4621C3002AC44D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F82A1FEE2B4621C3002AC44D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F82A1FED2B4621C3002AC44D /* AirPlayable.app */,
+				F82A20092B4621C4002AC44D /* AirPlayable Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82A1FEF2B4621C3002AC44D /* AirPlayable */ = {
+			isa = PBXGroup;
+			children = (
+				F82A1FF02B4621C3002AC44D /* AppDelegate.swift */,
+				F82A1FFC2B4621C3002AC44D /* ViewController.swift */,
+				F82A1FFE2B4621C3002AC44D /* Main.storyboard */,
+				F82A20012B4621C4002AC44D /* Assets.xcassets */,
+				F82A20032B4621C4002AC44D /* AirPlayable.entitlements */,
+				F82A20042B4621C4002AC44D /* AirPlayable.entitlements */,
+				F82A1FF22B4621C3002AC44D /* Resources */,
+			);
+			path = AirPlayable;
+			sourceTree = "<group>";
+		};
+		F82A1FF22B4621C3002AC44D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F82A1FF32B4621C3002AC44D /* Main.html */,
+				F82A1FF62B4621C3002AC44D /* Icon.png */,
+				F82A1FF82B4621C3002AC44D /* Style.css */,
+				F82A1FFA2B4621C3002AC44D /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F82A200D2B4621C4002AC44D /* AirPlayable Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F82A200E2B4621C4002AC44D /* SafariExtensionHandler.swift */,
+				F82A201A2B4621C4002AC44D /* Info.plist */,
+				F82A201B2B4621C4002AC44D /* AirPlayable_Extension.entitlements */,
+				F82A20122B4621C4002AC44D /* Resources */,
+			);
+			path = "AirPlayable Extension";
+			sourceTree = "<group>";
+		};
+		F82A20122B4621C4002AC44D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F82A20132B4621C4002AC44D /* script.js */,
+				F82A20152B4621C4002AC44D /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F82A1FEC2B4621C3002AC44D /* AirPlayable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82A20222B4621C4002AC44D /* Build configuration list for PBXNativeTarget "AirPlayable" */;
+			buildPhases = (
+				F82A1FE92B4621C3002AC44D /* Sources */,
+				F82A1FEA2B4621C3002AC44D /* Frameworks */,
+				F82A1FEB2B4621C3002AC44D /* Resources */,
+				F82A20212B4621C4002AC44D /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F82A200C2B4621C4002AC44D /* PBXTargetDependency */,
+			);
+			name = AirPlayable;
+			productName = AirPlayable;
+			productReference = F82A1FED2B4621C3002AC44D /* AirPlayable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F82A20082B4621C4002AC44D /* AirPlayable Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82A201E2B4621C4002AC44D /* Build configuration list for PBXNativeTarget "AirPlayable Extension" */;
+			buildPhases = (
+				F82A20052B4621C4002AC44D /* Sources */,
+				F82A20062B4621C4002AC44D /* Frameworks */,
+				F82A20072B4621C4002AC44D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AirPlayable Extension";
+			productName = "AirPlayable Extension";
+			productReference = F82A20092B4621C4002AC44D /* AirPlayable Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82A1FE52B4621C3002AC44D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					F82A1FEC2B4621C3002AC44D = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					F82A20082B4621C4002AC44D = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = F82A1FE82B4621C3002AC44D /* Build configuration list for PBXProject "AirPlayable" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F82A1FE42B4621C3002AC44D;
+			productRefGroup = F82A1FEE2B4621C3002AC44D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82A1FEC2B4621C3002AC44D /* AirPlayable */,
+				F82A20082B4621C4002AC44D /* AirPlayable Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82A1FEB2B4621C3002AC44D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A1FF72B4621C3002AC44D /* Icon.png in Resources */,
+				F82A20002B4621C3002AC44D /* Main.storyboard in Resources */,
+				F82A1FFB2B4621C3002AC44D /* Script.js in Resources */,
+				F82A1FF52B4621C3002AC44D /* Main.html in Resources */,
+				F82A20022B4621C4002AC44D /* Assets.xcassets in Resources */,
+				F82A1FF92B4621C3002AC44D /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A20072B4621C4002AC44D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A20162B4621C4002AC44D /* ToolbarItemIcon.pdf in Resources */,
+				F82A20142B4621C4002AC44D /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82A1FE92B4621C3002AC44D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A1FFD2B4621C3002AC44D /* ViewController.swift in Sources */,
+				F82A1FF12B4621C3002AC44D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82A20052B4621C4002AC44D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A200F2B4621C4002AC44D /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F82A200C2B4621C4002AC44D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F82A20082B4621C4002AC44D /* AirPlayable Extension */;
+			targetProxy = F82A200B2B4621C4002AC44D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F82A1FF32B4621C3002AC44D /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82A1FF42B4621C3002AC44D /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		F82A1FFE2B4621C3002AC44D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F82A1FFF2B4621C3002AC44D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F82A201C2B4621C4002AC44D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F82A201D2B4621C4002AC44D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F82A201F2B4621C4002AC44D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AirPlayable Extension/AirPlayable_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AirPlayable Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AirPlayable Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Tony Coconate. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonycoco.AirPlayable.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F82A20202B4621C4002AC44D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AirPlayable Extension/AirPlayable_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AirPlayable Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AirPlayable Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Tony Coconate. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonycoco.AirPlayable.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F82A20232B4621C4002AC44D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirPlayable/AirPlayable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AirPlayable;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Tony Coconate. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonycoco.AirPlayable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F82A20242B4621C4002AC44D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AirPlayable/AirPlayable.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HRQ4JSNN38;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AirPlayable;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Tony Coconate. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonycoco.AirPlayable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82A1FE82B4621C3002AC44D /* Build configuration list for PBXProject "AirPlayable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A201C2B4621C4002AC44D /* Debug */,
+				F82A201D2B4621C4002AC44D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82A201E2B4621C4002AC44D /* Build configuration list for PBXNativeTarget "AirPlayable Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A201F2B4621C4002AC44D /* Debug */,
+				F82A20202B4621C4002AC44D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82A20222B4621C4002AC44D /* Build configuration list for PBXNativeTarget "AirPlayable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A20232B4621C4002AC44D /* Debug */,
+				F82A20242B4621C4002AC44D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F82A1FE52B4621C3002AC44D /* Project object */;
+}
