@@ -42,9 +42,13 @@ function updateVideoElements() {
   }
 }
 
-safari.self.addEventListener("message", handleMessage);
+function handlePageUnload() {
+  safari.extension.dispatchMessage("pageUnloaded");
+}
 
+safari.self.addEventListener("message", handleMessage);
 window.addEventListener("focus", updateVideoElements);
+window.addEventListener("beforeunload", handlePageUnload);
 
 const observer = new MutationObserver(updateVideoElements);
 observer.observe(document, { childList: true, subtree: true });
